@@ -37,6 +37,10 @@
 	<array>
 		<string>MKDirectionsModePedestrian</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>途羊必须使用定位功能以提供服务</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>途羊必须使用定位功能以提供服务</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
