@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		112A950878F5C37171919F77C88E550E /* UIView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14220B4B8191AB53B6837F0D60566D /* UIView+SwCapture.swift */; };
+		225CA5FD66424ABE4E12AA6A1BCEED26 /* SwViewCapture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67050D0A8CFD6A825A2C57B2FE2150F9 /* SwViewCapture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26918D425ACDA140A6F8556357A6E2AE /* Pods-Tuyang-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3F2A0291F5D8A8C2371DE393E4870F /* Pods-Tuyang-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B2EFA2FB0D741934CEC24FBA6082F3C /* UIScrollView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771535977CBEFDD8DF345F2071D26131 /* UIScrollView+SwCapture.swift */; };
+		6F8709DEC6F89C5A461181714630BDAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		732D30EB2A50503CA9594CFE858FE39A /* Pods-Tuyang-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEE74070AAF9E1CFEB174EDAF098C94 /* Pods-Tuyang-dummy.m */; };
+		78115D0DAB7BDF496DBB1BB8A078D734 /* SwViewCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = F64BF565E3E1F6F7AE0A80F42136262B /* SwViewCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4348C6A1B6A1E99064E13BA9306155A /* SwViewCapture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0E699BCC5C8BECA7320BFFF9A62625 /* SwViewCapture-dummy.m */; };
+		D59B5B932434C84A691C08E7DD403545 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E46272E01E2804604646A7331D3FEE77 /* WKWebView+SwCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7199ECC8DACA394F5663422DBD38274 /* WKWebView+SwCapture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9592811689D0C22838FDA9E937A5DA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2CD26E21F0AAD15CF0B25B19CB5F5B;
+			remoteInfo = SwViewCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0225E907D7AF4E4516350D1A3E267188 /* Pods-Tuyang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tuyang.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2A210D528AF373C500EAEA826C907C /* Pods-Tuyang-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tuyang-frameworks.sh"; sourceTree = "<group>"; };
+		105EB6DAE1AC585DB8C6C59B0D8E037C /* Pods_Tuyang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tuyang.framework; path = "Pods-Tuyang.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A520B58F26EBF8B0D263D976F30DF5 /* SwViewCapture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwViewCapture-prefix.pch"; sourceTree = "<group>"; };
+		2EBE0B38C81D2292B12364B45AD5A6F4 /* Pods-Tuyang.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tuyang.modulemap"; sourceTree = "<group>"; };
+		36CE0809B86F056A65429C03E85FBA92 /* SwViewCapture.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwViewCapture.xcconfig; sourceTree = "<group>"; };
+		58027BA31321D84E2F5AC32DBD325775 /* Pods-Tuyang-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tuyang-resources.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67050D0A8CFD6A825A2C57B2FE2150F9 /* SwViewCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwViewCapture-umbrella.h"; sourceTree = "<group>"; };
+		6D3F2A0291F5D8A8C2371DE393E4870F /* Pods-Tuyang-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tuyang-umbrella.h"; sourceTree = "<group>"; };
+		771535977CBEFDD8DF345F2071D26131 /* UIScrollView+SwCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+SwCapture.swift"; path = "SwViewCapture/UIScrollView+SwCapture.swift"; sourceTree = "<group>"; };
+		7DF3ED2EBF2570CF713712395E5AAEE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D1BBC9BEE157FE56A028E3A61D826A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CEE74070AAF9E1CFEB174EDAF098C94 /* Pods-Tuyang-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tuyang-dummy.m"; sourceTree = "<group>"; };
+		A651F3300187210EC41A935B8079E5F3 /* Pods-Tuyang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tuyang.release.xcconfig"; sourceTree = "<group>"; };
+		AC066C5AB54E2FC2988E583B9122DB7B /* Pods-Tuyang-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tuyang-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD14220B4B8191AB53B6837F0D60566D /* UIView+SwCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SwCapture.swift"; path = "SwViewCapture/UIView+SwCapture.swift"; sourceTree = "<group>"; };
+		B0DB1A7626ACA242C234DE43FC29D2B7 /* SwViewCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwViewCapture.framework; path = SwViewCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F878E6C932CB095FEB87044EF2A7EE /* Pods-Tuyang-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tuyang-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7199ECC8DACA394F5663422DBD38274 /* WKWebView+SwCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKWebView+SwCapture.swift"; path = "SwViewCapture/WKWebView+SwCapture.swift"; sourceTree = "<group>"; };
+		EC24D96C42C119D1399DAB729CE691DB /* SwViewCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwViewCapture.modulemap; sourceTree = "<group>"; };
+		F64BF565E3E1F6F7AE0A80F42136262B /* SwViewCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwViewCapture.h; path = SwViewCapture/SwViewCapture.h; sourceTree = "<group>"; };
+		FC0E699BCC5C8BECA7320BFFF9A62625 /* SwViewCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwViewCapture-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D9BA951E6E017BC72B655D6611198CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8709DEC6F89C5A461181714630BDAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C34A144F71E89AC91FA8923CA889A393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59B5B932434C84A691C08E7DD403545 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AE221BD9563E0857858F5743DA63640 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81D1BBC9BEE157FE56A028E3A61D826A /* Info.plist */,
+				EC24D96C42C119D1399DAB729CE691DB /* SwViewCapture.modulemap */,
+				36CE0809B86F056A65429C03E85FBA92 /* SwViewCapture.xcconfig */,
+				FC0E699BCC5C8BECA7320BFFF9A62625 /* SwViewCapture-dummy.m */,
+				22A520B58F26EBF8B0D263D976F30DF5 /* SwViewCapture-prefix.pch */,
+				67050D0A8CFD6A825A2C57B2FE2150F9 /* SwViewCapture-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwViewCapture";
+			sourceTree = "<group>";
+		};
+		70A28E576E655258AC57CDA888BB9E6C /* SwViewCapture */ = {
+			isa = PBXGroup;
+			children = (
+				F64BF565E3E1F6F7AE0A80F42136262B /* SwViewCapture.h */,
+				771535977CBEFDD8DF345F2071D26131 /* UIScrollView+SwCapture.swift */,
+				AD14220B4B8191AB53B6837F0D60566D /* UIView+SwCapture.swift */,
+				D7199ECC8DACA394F5663422DBD38274 /* WKWebView+SwCapture.swift */,
+				5AE221BD9563E0857858F5743DA63640 /* Support Files */,
+			);
+			name = SwViewCapture;
+			path = SwViewCapture;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FAAA987421B50A071226F9754A856D8B /* Pods */,
+				7F63D185F1D4857A4B90BE0AB8764CB3 /* Products */,
+				EECCEDB5A5FA70112F4B5EC140DAECEA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F63D185F1D4857A4B90BE0AB8764CB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				105EB6DAE1AC585DB8C6C59B0D8E037C /* Pods_Tuyang.framework */,
+				B0DB1A7626ACA242C234DE43FC29D2B7 /* SwViewCapture.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E32A1424374AE35A04FE840860CEE3DB /* Pods-Tuyang */ = {
+			isa = PBXGroup;
+			children = (
+				7DF3ED2EBF2570CF713712395E5AAEE6 /* Info.plist */,
+				2EBE0B38C81D2292B12364B45AD5A6F4 /* Pods-Tuyang.modulemap */,
+				AC066C5AB54E2FC2988E583B9122DB7B /* Pods-Tuyang-acknowledgements.markdown */,
+				B1F878E6C932CB095FEB87044EF2A7EE /* Pods-Tuyang-acknowledgements.plist */,
+				9CEE74070AAF9E1CFEB174EDAF098C94 /* Pods-Tuyang-dummy.m */,
+				0A2A210D528AF373C500EAEA826C907C /* Pods-Tuyang-frameworks.sh */,
+				58027BA31321D84E2F5AC32DBD325775 /* Pods-Tuyang-resources.sh */,
+				6D3F2A0291F5D8A8C2371DE393E4870F /* Pods-Tuyang-umbrella.h */,
+				0225E907D7AF4E4516350D1A3E267188 /* Pods-Tuyang.debug.xcconfig */,
+				A651F3300187210EC41A935B8079E5F3 /* Pods-Tuyang.release.xcconfig */,
+			);
+			name = "Pods-Tuyang";
+			path = "Target Support Files/Pods-Tuyang";
+			sourceTree = "<group>";
+		};
+		EECCEDB5A5FA70112F4B5EC140DAECEA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E32A1424374AE35A04FE840860CEE3DB /* Pods-Tuyang */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FAAA987421B50A071226F9754A856D8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A28E576E655258AC57CDA888BB9E6C /* SwViewCapture */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B408B916A3943E3FFC023B098F8A96F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225CA5FD66424ABE4E12AA6A1BCEED26 /* SwViewCapture-umbrella.h in Headers */,
+				78115D0DAB7BDF496DBB1BB8A078D734 /* SwViewCapture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		689935BC5A5F46F49919C18F7D2356F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26918D425ACDA140A6F8556357A6E2AE /* Pods-Tuyang-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6B0B51A10520681D84723077CCF6C1AC /* Pods-Tuyang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47ECF30FFA571DEE8B406E7C2081DE0 /* Build configuration list for PBXNativeTarget "Pods-Tuyang" */;
+			buildPhases = (
+				4057D1F4CA55A3EDBE193CE5F3963464 /* Sources */,
+				9D9BA951E6E017BC72B655D6611198CD /* Frameworks */,
+				689935BC5A5F46F49919C18F7D2356F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1BB4E44337C520233E27FFE2CE5B43 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tuyang";
+			productName = "Pods-Tuyang";
+			productReference = 105EB6DAE1AC585DB8C6C59B0D8E037C /* Pods_Tuyang.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB2CD26E21F0AAD15CF0B25B19CB5F5B /* SwViewCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B88B77B2AC00B28B0C1AF490A27E5E2 /* Build configuration list for PBXNativeTarget "SwViewCapture" */;
+			buildPhases = (
+				DB368842452302A9614AAE54008D300D /* Sources */,
+				C34A144F71E89AC91FA8923CA889A393 /* Frameworks */,
+				3B408B916A3943E3FFC023B098F8A96F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwViewCapture;
+			productName = SwViewCapture;
+			productReference = B0DB1A7626ACA242C234DE43FC29D2B7 /* SwViewCapture.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7F63D185F1D4857A4B90BE0AB8764CB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B0B51A10520681D84723077CCF6C1AC /* Pods-Tuyang */,
+				EB2CD26E21F0AAD15CF0B25B19CB5F5B /* SwViewCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4057D1F4CA55A3EDBE193CE5F3963464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732D30EB2A50503CA9594CFE858FE39A /* Pods-Tuyang-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB368842452302A9614AAE54008D300D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4348C6A1B6A1E99064E13BA9306155A /* SwViewCapture-dummy.m in Sources */,
+				2B2EFA2FB0D741934CEC24FBA6082F3C /* UIScrollView+SwCapture.swift in Sources */,
+				112A950878F5C37171919F77C88E550E /* UIView+SwCapture.swift in Sources */,
+				E46272E01E2804604646A7331D3FEE77 /* WKWebView+SwCapture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1BB4E44337C520233E27FFE2CE5B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwViewCapture;
+			target = EB2CD26E21F0AAD15CF0B25B19CB5F5B /* SwViewCapture */;
+			targetProxy = D9592811689D0C22838FDA9E937A5DA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F55219A451A6F14DB0FCB87088CB281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CE0809B86F056A65429C03E85FBA92 /* SwViewCapture.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwViewCapture/SwViewCapture-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwViewCapture/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwViewCapture/SwViewCapture.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwViewCapture;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6B86C58C721CF6BF917C453911A563D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CE0809B86F056A65429C03E85FBA92 /* SwViewCapture.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwViewCapture/SwViewCapture-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwViewCapture/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwViewCapture/SwViewCapture.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwViewCapture;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B1AD443DAB65C149149EBB25364B9CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A651F3300187210EC41A935B8079E5F3 /* Pods-Tuyang.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tuyang/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tuyang/Pods-Tuyang.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tuyang;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB2FA1624D92EBE9E74E6A80D8C8E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0225E907D7AF4E4516350D1A3E267188 /* Pods-Tuyang.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tuyang/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tuyang/Pods-Tuyang.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tuyang;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B88B77B2AC00B28B0C1AF490A27E5E2 /* Build configuration list for PBXNativeTarget "SwViewCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F55219A451A6F14DB0FCB87088CB281 /* Debug */,
+				6B86C58C721CF6BF917C453911A563D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47ECF30FFA571DEE8B406E7C2081DE0 /* Build configuration list for PBXNativeTarget "Pods-Tuyang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB2FA1624D92EBE9E74E6A80D8C8E51 /* Debug */,
+				7B1AD443DAB65C149149EBB25364B9CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

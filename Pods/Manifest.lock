@@ -1,0 +1,12 @@
+PODS:
+  - SwViewCapture (1.0.6)
+
+DEPENDENCIES:
+  - SwViewCapture
+
+SPEC CHECKSUMS:
+  SwViewCapture: edf1ea74e164f47af005fbdfdc6fc18ec373ec69
+
+PODFILE CHECKSUM: cd3bf4892fe5d8a34622f6f93419fcb037848a68
+
+COCOAPODS: 1.2.1

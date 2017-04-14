@@ -1,0 +1,6 @@
+framework module Pods_Tuyang {
+  umbrella header "Pods-Tuyang-umbrella.h"
+
+  export *
+  module * { export * }
+}
