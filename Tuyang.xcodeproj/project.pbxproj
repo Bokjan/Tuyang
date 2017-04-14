@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76978BFE1EA12F8E002205EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978BFD1EA12F8E002205EF /* AppDelegate.swift */; };
+		76978C001EA12F8E002205EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978BFF1EA12F8E002205EF /* MapViewController.swift */; };
+		76978C031EA12F8E002205EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76978C011EA12F8E002205EF /* Main.storyboard */; };
+		76978C061EA12F8E002205EF /* Tuyang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76978C041EA12F8E002205EF /* Tuyang.xcdatamodeld */; };
+		76978C081EA12F8E002205EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76978C071EA12F8E002205EF /* Assets.xcassets */; };
+		76978C0B1EA12F8E002205EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76978C091EA12F8E002205EF /* LaunchScreen.storyboard */; };
+		76978C141EA13047002205EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978C121EA13047002205EF /* BaseViewController.swift */; };
+		76978C151EA13047002205EF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978C131EA13047002205EF /* MenuViewController.swift */; };
+		76978C181EA134B2002205EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76978C171EA134B2002205EF /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76978BFA1EA12F8E002205EF /* Tuyang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuyang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76978BFD1EA12F8E002205EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76978BFF1EA12F8E002205EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		76978C021EA12F8E002205EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76978C051EA12F8E002205EF /* Tuyang.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tuyang.xcdatamodel; sourceTree = "<group>"; };
+		76978C071EA12F8E002205EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76978C0A1EA12F8E002205EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76978C0C1EA12F8E002205EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76978C121EA13047002205EF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/BaseViewController.swift"; sourceTree = "<group>"; };
+		76978C131EA13047002205EF /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/MenuViewController.swift"; sourceTree = "<group>"; };
+		76978C171EA134B2002205EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76978BF71EA12F8E002205EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76978C181EA134B2002205EF /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76978BF11EA12F8E002205EF = {
+			isa = PBXGroup;
+			children = (
+				76978BFC1EA12F8E002205EF /* Tuyang */,
+				76978BFB1EA12F8E002205EF /* Products */,
+				76978C161EA134B2002205EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76978BFB1EA12F8E002205EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76978BFA1EA12F8E002205EF /* Tuyang.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76978BFC1EA12F8E002205EF /* Tuyang */ = {
+			isa = PBXGroup;
+			children = (
+				76978BFD1EA12F8E002205EF /* AppDelegate.swift */,
+				76978BFF1EA12F8E002205EF /* MapViewController.swift */,
+				76978C121EA13047002205EF /* BaseViewController.swift */,
+				76978C131EA13047002205EF /* MenuViewController.swift */,
+				76978C011EA12F8E002205EF /* Main.storyboard */,
+				76978C071EA12F8E002205EF /* Assets.xcassets */,
+				76978C091EA12F8E002205EF /* LaunchScreen.storyboard */,
+				76978C0C1EA12F8E002205EF /* Info.plist */,
+				76978C041EA12F8E002205EF /* Tuyang.xcdatamodeld */,
+			);
+			path = Tuyang;
+			sourceTree = "<group>";
+		};
+		76978C161EA134B2002205EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76978C171EA134B2002205EF /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76978BF91EA12F8E002205EF /* Tuyang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76978C0F1EA12F8E002205EF /* Build configuration list for PBXNativeTarget "Tuyang" */;
+			buildPhases = (
+				76978BF61EA12F8E002205EF /* Sources */,
+				76978BF71EA12F8E002205EF /* Frameworks */,
+				76978BF81EA12F8E002205EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tuyang;
+			productName = Tuyang;
+			productReference = 76978BFA1EA12F8E002205EF /* Tuyang.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76978BF21EA12F8E002205EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Bokjan;
+				TargetAttributes = {
+					76978BF91EA12F8E002205EF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 6A6Z8T6L4A;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 76978BF51EA12F8E002205EF /* Build configuration list for PBXProject "Tuyang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76978BF11EA12F8E002205EF;
+			productRefGroup = 76978BFB1EA12F8E002205EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76978BF91EA12F8E002205EF /* Tuyang */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76978BF81EA12F8E002205EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76978C0B1EA12F8E002205EF /* LaunchScreen.storyboard in Resources */,
+				76978C081EA12F8E002205EF /* Assets.xcassets in Resources */,
+				76978C031EA12F8E002205EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76978BF61EA12F8E002205EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76978C001EA12F8E002205EF /* MapViewController.swift in Sources */,
+				76978C151EA13047002205EF /* MenuViewController.swift in Sources */,
+				76978C141EA13047002205EF /* BaseViewController.swift in Sources */,
+				76978C061EA12F8E002205EF /* Tuyang.xcdatamodeld in Sources */,
+				76978BFE1EA12F8E002205EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76978C011EA12F8E002205EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76978C021EA12F8E002205EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76978C091EA12F8E002205EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76978C0A1EA12F8E002205EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76978C0D1EA12F8E002205EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76978C0E1EA12F8E002205EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76978C101EA12F8E002205EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6A6Z8T6L4A;
+				INFOPLIST_FILE = Tuyang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bokjan.Tuyang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		76978C111EA12F8E002205EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6A6Z8T6L4A;
+				INFOPLIST_FILE = Tuyang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bokjan.Tuyang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76978BF51EA12F8E002205EF /* Build configuration list for PBXProject "Tuyang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76978C0D1EA12F8E002205EF /* Debug */,
+				76978C0E1EA12F8E002205EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76978C0F1EA12F8E002205EF /* Build configuration list for PBXNativeTarget "Tuyang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76978C101EA12F8E002205EF /* Debug */,
+				76978C111EA12F8E002205EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		76978C041EA12F8E002205EF /* Tuyang.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				76978C051EA12F8E002205EF /* Tuyang.xcdatamodel */,
+			);
+			currentVersion = 76978C051EA12F8E002205EF /* Tuyang.xcdatamodel */;
+			path = Tuyang.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 76978BF21EA12F8E002205EF /* Project object */;
+}
