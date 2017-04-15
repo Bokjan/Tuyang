@@ -14,6 +14,8 @@ import Just
 
 class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 	@IBOutlet weak var mapView: MKMapView!
+	@IBOutlet weak var checkinButton: UIButton!
+	@IBOutlet weak var relocateButton: UIButton!
 	let locationManager : CLLocationManager = CLLocationManager()
 	var currentLocation : CLLocation! // Ref: P518
 	var annotations: [Int] = []
@@ -56,17 +58,28 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 		// Dispose of any resources that can be recreated.
 	}
 
-
+	override func viewDidAppear(_ animated: Bool) {
+		locationManager.startUpdatingLocation()
+	}
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
 		currentLocation = locations.last
 //		print("lat: \(currentLocation.coordinate.latitude), long: \(currentLocation.coordinate.longitude)")
-		let latDelta = 0.03
-		let longDelta = 0.03
+		let latDelta = 0.02
+		let longDelta = 0.02
 		let currentLocationSpan = MKCoordinateSpanMake(latDelta, longDelta)
 		let currentRegion = MKCoordinateRegionMake(currentLocation.coordinate, currentLocationSpan)
 		self.mapView.setRegion(currentRegion, animated: true)
 		self.mapView.showsUserLocation = true
 		locationManager.stopUpdatingLocation()
+		for item in mapView.annotations {
+			let s = getDistance(lat1: currentLocation.coordinate.latitude, lon1: currentLocation.coordinate.longitude, lat2: item.coordinate.latitude, lon2: item.coordinate.longitude)
+			debugPrint("distance: \(s), title: \(item.title!)")
+			if s <= 1.0 { // km
+				checkinButton.isEnabled = true
+				return
+			}
+		}
+		checkinButton.isEnabled = false
 	}
 	func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
 		debugPrint("mapChangeDetected")
@@ -109,6 +122,12 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 			anno.subtitle = sub["description"].string!
 			mapView.addAnnotation(anno)
 		}
+	}
+	@IBAction func relocateButtonTouched(_ sender: Any) {
+		locationManager.startUpdatingLocation()
+	}
+	@IBAction func checkinButtonTouched(_ sender: Any) {
+		
 	}
 }
 
