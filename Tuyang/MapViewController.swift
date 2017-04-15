@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import SwiftyJSON
+import Alamofire
 
 class ViewController: BaseViewController, CLLocationManagerDelegate {
 	@IBOutlet weak var mapView: MKMapView!
@@ -25,6 +27,12 @@ class ViewController: BaseViewController, CLLocationManagerDelegate {
 		if(CLLocationManager.locationServicesEnabled()) {
 			locationManager.startUpdatingLocation()
 		}
+//		let whatthefuck = Http.genPath(route: "users/login")
+//		let data = ["username":"wallace", "password":"IamSOOOOtall"]
+//		let json = JSON(data)
+//		Alamofire.request(whatthefuck, method: .post, parameters: data, encoding: JSONEncoding.default, headers: ["Content-Type" : "application/json"]).responseJSON { response in
+//				print(response)
+//		}
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -32,9 +40,13 @@ class ViewController: BaseViewController, CLLocationManagerDelegate {
 		// Dispose of any resources that can be recreated.
 	}
 
+	func getNwSe() -> (CGPoint, CGPoint) {
+		let nw = CGPoint(x: self.mapView.bounds.origin.x + self.mapView.bounds.size.width, y: self.mapView.bounds.origin.y + self.mapView.bounds.size.height)
+		let se = CGPoint(x: self.mapView.bounds.origin.x, y: self.mapView.bounds.origin.y)
+		return (nw, se)
+	}
 
 	func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-//		print("whatthefuck?")
 		currentLocation = locations.last
 //		print("lat: \(currentLocation.coordinate.latitude), long: \(currentLocation.coordinate.longitude)")
 		let latDelta = 0.03
