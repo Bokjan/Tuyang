@@ -98,7 +98,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func updateArrayMenuOptions(){
 		arrayMenuOptions.append(["title":"我的足迹", "icon":"MyTrack"])
 		arrayMenuOptions.append(["title":"系统设置", "icon":"Settings"])
-        arrayMenuOptions.append(["title":"关于我们", "icon":"AboutUs"])
+        arrayMenuOptions.append(["title":"关于途羊", "icon":"AboutUs"])
         tblMenuOptions.reloadData()
     }
     

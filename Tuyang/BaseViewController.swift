@@ -26,9 +26,9 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
-            print("Home\n", terminator: "")
+            print("MyTrack\n", terminator: "")
 
-            self.openViewControllerBasedOnIdentifier("Home")
+            self.openViewControllerBasedOnIdentifier("MyTrackViewController")
             
             break
         case 1:
@@ -37,6 +37,9 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             self.openViewControllerBasedOnIdentifier("PlayVC")
             
             break
+		case 2:
+			print("AboutUs")
+			self.openViewControllerBasedOnIdentifier("AboutUsViewController")
         default:
             print("default\n", terminator: "")
         }

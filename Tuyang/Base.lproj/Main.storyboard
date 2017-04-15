@@ -12,7 +12,7 @@
         <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Map View Controller" customClass="ViewController" customModule="Tuyang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Home" storyboardIdentifier="Home" id="BYZ-38-t0r" userLabel="Map View Controller" customClass="ViewController" customModule="Tuyang" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -42,6 +42,77 @@
             </objects>
             <point key="canvasLocation" x="963.75" y="33.802816901408448"/>
         </scene>
+        <!--我的足迹-->
+        <scene sceneID="0Me-bG-mR6">
+            <objects>
+                <viewController storyboardIdentifier="MyTrackViewController" title="我的足迹" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YJg-Eo-Sjo" customClass="MyTrackViewController" customModule="Tuyang" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L8H-9J-Tb2"/>
+                        <viewControllerLayoutGuide type="bottom" id="u7m-9M-ibc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kfl-eb-Eav">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiY-Kr-YlP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="AiY-Kr-YlP" id="1Vu-Ec-gvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDj-06-Rkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="34.859154929577464"/>
+        </scene>
+        <!--关于途羊-->
+        <scene sceneID="MBO-pH-Xor">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewController" title="关于途羊" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YcD-iQ-bWo" customClass="AboutUsViewController" customModule="Tuyang" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ct-4K-YkL"/>
+                        <viewControllerLayoutGuide type="bottom" id="FeS-s8-wHe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="AboutUsViewController" id="jS1-zI-tGv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7n-tO-XDm" userLabel="Introduction">
+                                <rect key="frame" x="16" y="175" width="288" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">　　途羊，是旅途的“途”与象征着广州的“羊”的组合。
+
+　　途羊是一个基于地理位置的城市探索应用，推荐、分享广州有趣的地点。用户通过游览广州，收集拼图碎片，通过碎片合成拼图，获得一定奖励。同时途羊能够提供一些帮助游览的小工具，使用户更加轻松地探索广州。</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="HO1-v7-vEw">
+                                <rect key="frame" x="130" y="104" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2017 华莱士来华 All rights reserved." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGT-uP-2Gv" userLabel="Introduction">
+                                <rect key="frame" x="16" y="533" width="288" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="logoImage" destination="HO1-v7-vEw" id="VeW-Og-AlA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEf-YX-zDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2737.5" y="34.859154929577464"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="jJR-Oj-Fpj">
             <objects>
@@ -69,8 +140,8 @@
                                 <rect key="frame" x="24" y="80" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="江泽民" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdR-os-Elq" userLabel="Username">
-                                <rect key="frame" x="103" y="100" width="52" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="江泽民" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdR-os-Elq" userLabel="Username">
+                                <rect key="frame" x="92" y="100" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -176,6 +247,7 @@
     <resources>
         <image name="Avatar" width="131" height="131"/>
         <image name="CheckInButton" width="150" height="55"/>
+        <image name="Logo" width="60" height="60"/>
         <image name="ShadowEffect" width="50" height="568"/>
     </resources>
 </document>

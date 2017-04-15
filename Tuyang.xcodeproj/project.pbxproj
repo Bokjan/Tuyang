@@ -12,6 +12,8 @@
 		762F80F21EA1AFD50031C68C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F80F01EA1AFD50031C68C /* MenuViewController.swift */; };
 		762F80F41EA1CD070031C68C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F80F31EA1CD070031C68C /* UserDefault.swift */; };
 		762F80F61EA1D3030031C68C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F80F51EA1D3030031C68C /* Global.swift */; };
+		762F80FC1EA203200031C68C /* MyTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F80FB1EA203200031C68C /* MyTrackViewController.swift */; };
+		762F80FE1EA20AB30031C68C /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F80FD1EA20AB30031C68C /* AboutUsViewController.swift */; };
 		76978BFE1EA12F8E002205EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978BFD1EA12F8E002205EF /* AppDelegate.swift */; };
 		76978C001EA12F8E002205EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76978BFF1EA12F8E002205EF /* MapViewController.swift */; };
 		76978C031EA12F8E002205EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76978C011EA12F8E002205EF /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		762F80F01EA1AFD50031C68C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		762F80F31EA1CD070031C68C /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefault.swift; path = Utility/UserDefault.swift; sourceTree = "<group>"; };
 		762F80F51EA1D3030031C68C /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		762F80FB1EA203200031C68C /* MyTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrackViewController.swift; sourceTree = "<group>"; };
+		762F80FD1EA20AB30031C68C /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		76978BFA1EA12F8E002205EF /* Tuyang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuyang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76978BFD1EA12F8E002205EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76978BFF1EA12F8E002205EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				762F80F31EA1CD070031C68C /* UserDefault.swift */,
 				762F80F01EA1AFD50031C68C /* MenuViewController.swift */,
 				76978BFD1EA12F8E002205EF /* AppDelegate.swift */,
+				762F80FD1EA20AB30031C68C /* AboutUsViewController.swift */,
 				76978BFF1EA12F8E002205EF /* MapViewController.swift */,
 				76978C011EA12F8E002205EF /* Main.storyboard */,
 				76978C071EA12F8E002205EF /* Assets.xcassets */,
@@ -85,6 +90,7 @@
 				76978C041EA12F8E002205EF /* Tuyang.xcdatamodeld */,
 				762F80ED1EA163AE0031C68C /* Network.swift */,
 				762F80F51EA1D3030031C68C /* Global.swift */,
+				762F80FB1EA203200031C68C /* MyTrackViewController.swift */,
 			);
 			path = Tuyang;
 			sourceTree = "<group>";
@@ -235,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762F80FE1EA20AB30031C68C /* AboutUsViewController.swift in Sources */,
 				762F80F61EA1D3030031C68C /* Global.swift in Sources */,
 				762F80F11EA1AFD50031C68C /* BaseViewController.swift in Sources */,
 				762F80F41EA1CD070031C68C /* UserDefault.swift in Sources */,
+				762F80FC1EA203200031C68C /* MyTrackViewController.swift in Sources */,
 				762F80F21EA1AFD50031C68C /* MenuViewController.swift in Sources */,
 				76978C001EA12F8E002205EF /* MapViewController.swift in Sources */,
 				762F80EE1EA163AE0031C68C /* Network.swift in Sources */,
