@@ -3,6 +3,7 @@ use_frameworks!
 target 'Tuyang' do
     pod 'SwViewCapture'
     pod 'SwiftyJSON'
-    pod 'Alamofire', '~> 4.4'
+    pod 'Just'
+    pod 'Alamofire'
     pod 'ReachabilitySwift', '~> 3'
 end

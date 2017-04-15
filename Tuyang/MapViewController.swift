@@ -10,14 +10,34 @@ import UIKit
 import MapKit
 import CoreLocation
 import SwiftyJSON
-import Alamofire
+import Just
 
 class ViewController: BaseViewController, CLLocationManagerDelegate {
 	@IBOutlet weak var mapView: MKMapView!
 	let locationManager : CLLocationManager = CLLocationManager()
 	var currentLocation : CLLocation! // Ref: P518
+
+	func processLogin() {
+		if UserDefault.getValue(key: "usertoken") == nil {
+			UserDefault.setValue(key: "username", value: "wallace")
+			UserDefault.setValue(key: "password", value: "IamSOOOOtall")
+		}
+		Global.username = UserDefault.getValue(key: "username") as? String
+		Global.password = UserDefault.getValue(key: "password") as? String
+		if let jsonstr = Just.post(Http.genPath(route: "users/login"), json: ["username":Global.username!, "password": Global.password!]).text {
+			if let jsonData = jsonstr.data(using: String.Encoding.utf8, allowLossyConversion: false) {
+				let json = JSON(data: jsonData)
+				if let usertoken = json["result"].string {
+					debugPrint("hahah")
+					Global.usertoken = usertoken
+					UserDefault.setValue(key: "usertoken", value: usertoken)
+				}
+			}
+		}
+	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		processLogin()
 		// Do any additional setup after loading the view, typically from a nib.
 		self.addSlideMenuButton()
 		locationManager.delegate = self
@@ -27,12 +47,7 @@ class ViewController: BaseViewController, CLLocationManagerDelegate {
 		if(CLLocationManager.locationServicesEnabled()) {
 			locationManager.startUpdatingLocation()
 		}
-//		let whatthefuck = Http.genPath(route: "users/login")
-//		let data = ["username":"wallace", "password":"IamSOOOOtall"]
-//		let json = JSON(data)
-//		Alamofire.request(whatthefuck, method: .post, parameters: data, encoding: JSONEncoding.default, headers: ["Content-Type" : "application/json"]).responseJSON { response in
-//				print(response)
-//		}
+//		self.processLogin()
 	}
 
 	override func didReceiveMemoryWarning() {

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Just
 
 protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index : Int32)
@@ -24,7 +26,9 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     @IBOutlet var btnCloseMenuOverlay : UIButton!
 
+	@IBOutlet weak var usernameLabel: UILabel!
 
+	@IBOutlet weak var avatarImage: UIImageView!
     /**
     *  Array containing menu options
     */
@@ -39,11 +43,43 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     *  Delegate of the MenuVC
     */
     var delegate : SlideMenuDelegate?
-    
+
+
 	@IBOutlet weak var avatar: UIImageView!
+
+	func beforeViewDidLoad() {
+		let username = UserDefault.getValue(key: "username") as! String
+		let usertoken = UserDefault.getValue(key: "usertoken") as! String
+//		Alamofire.request(Http.genPath(route: "users/info"), method: .post, parameters: ["username":username, "token":usertoken]).responseString { response in
+//			if let str = response.result.value {
+//				let json = JSON(str)
+//				if let avatarUrl = json["result"]["avatar_url"].string {
+//					Global.avatarUrl = avatarUrl
+//					UserDefault.setValue(key: "avatarUrl", value: avatarUrl)
+//					self.avatarImage.downloadedFrom(link: avatarUrl)
+//				}
+//			}
+//		}
+		if let jsonstr = Just.post(Http.genPath(route: "users/info"), json: ["username":username, "token":usertoken]).text {
+			debugPrint(jsonstr)
+			if let jsonData = jsonstr.data(using: String.Encoding.utf8) {
+				let json = JSON(data: jsonData)
+				if let avatarUrl = json["result"]["avatar_url"].string {
+					Global.avatarUrl = avatarUrl
+					UserDefault.setValue(key: "avatarUrl", value: avatarUrl)
+					debugPrint(avatarUrl)
+					debugPrint(jsonstr)
+					self.avatarImage.downloadedFrom(link: avatarUrl)
+				}
+			}
+		}
+	}
+
     override func viewDidLoad() {
+		beforeViewDidLoad()
 		self.avatar.layer.masksToBounds = true
 		self.avatar.layer.cornerRadius = 30
+		usernameLabel.text = Global.username
         super.viewDidLoad()
         tblMenuOptions.tableFooterView = UIView()
         // Do any additional setup after loading the view.

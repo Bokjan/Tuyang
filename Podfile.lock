@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.4.0)
+  - Just (0.6.0)
   - ReachabilitySwift (3)
   - SwiftyJSON (3.1.4)
   - SwViewCapture (1.0.6)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - Alamofire
+  - Just
   - ReachabilitySwift (~> 3)
   - SwiftyJSON
   - SwViewCapture
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Just: 0b60164cc2b516fbddd8948ef7841c70896f1e4d
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwViewCapture: edf1ea74e164f47af005fbdfdc6fc18ec373ec69
 
-PODFILE CHECKSUM: c59b05918c8480f5c7ba6ecff3c9e03d7b3fcf49
+PODFILE CHECKSUM: 7553edda340bed69a6aa7062468d71ccf3b9ad14
 
 COCOAPODS: 1.2.1

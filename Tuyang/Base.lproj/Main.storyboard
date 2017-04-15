@@ -144,8 +144,10 @@
                     </view>
                     <connections>
                         <outlet property="avatar" destination="0PS-ST-07W" id="2cB-zR-7Ym"/>
+                        <outlet property="avatarImage" destination="0PS-ST-07W" id="BuB-R0-fZp"/>
                         <outlet property="btnCloseMenuOverlay" destination="LOh-Un-A2Q" id="DQV-h3-f7k"/>
                         <outlet property="tblMenuOptions" destination="KAK-8F-atB" id="fKu-yh-Ct6"/>
+                        <outlet property="usernameLabel" destination="FdR-os-Elq" id="3T2-34-ywx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQP-fw-gFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
