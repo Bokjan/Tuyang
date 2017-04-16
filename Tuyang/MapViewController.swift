@@ -40,6 +40,7 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 	}
 	override func viewDidLoad() {
 		super.viewDidLoad()
+//		showAlertView(title: "测试", message: "测试")
 		processLogin()
 		// Do any additional setup after loading the view, typically from a nib.
 		self.addSlideMenuButton()

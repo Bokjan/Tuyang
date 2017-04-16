@@ -24,7 +24,7 @@ class CheckinViewController : BaseViewController, UIImagePickerControllerDelegat
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		commentTextField.placeholder = "#我在\(UserDefault.getValue(key: "currentTitle")!))"
+		commentTextField.placeholder = "#我在\(UserDefault.getValue(key: "currentTitle")!)"
 
 		let picker = UIImagePickerController()
 		picker.delegate = self
@@ -49,8 +49,12 @@ class CheckinViewController : BaseViewController, UIImagePickerControllerDelegat
 		RFC3339DateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
 		let time = RFC3339DateFormatter.string(from: Date())
 		debugPrint(time)
+		let comment = (commentTextField.text?.isEmpty)! ? commentTextField.placeholder : commentTextField.text!
 
-		let jsonret = Just.post(Http.genPath(route: "visits/new"), json: ["username":Global.username!, "token":Global.usertoken!, "place_id":UserDefault.getValue(key: "currentID") as! Int, "time":time, "coordinate":UserDefault.getValue(key: "coordString") as! String, "photo":imageBase64!, "comments":commentTextField.text!]).text
+		let jsonret = Just.post(Http.genPath(route: "visits/new"), json: ["username":Global.username!, "token":Global.usertoken!, "place_id":UserDefault.getValue(key: "currentID") as! Int, "time":time, "coordinate":UserDefault.getValue(key: "coordString") as! String, "photo":imageBase64!, "comments":comment!]).text
 		debugPrint(jsonret!)
+		self.dismiss(animated: true, completion: {() -> Void in
+
+		})
 	}
 }

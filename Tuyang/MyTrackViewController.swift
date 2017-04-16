@@ -13,7 +13,9 @@ class MyTrackViewController : BaseViewController {
 		super.didReceiveMemoryWarning()
 	}
 	override func viewDidLoad() {
-		let url:URL! = URL(string: "https://www.baidu.com")
+		let wtf = "https://tuyang.tenhou.cn/tuyang/index.html?username=\(UserDefault.getValue(key: "username") as! String)&token=\(UserDefault.getValue(key: "usertoken") as! String)"
+		debugPrint(wtf)
+		let url:URL! = URL(string: wtf)
 		let request = URLRequest(url: url)
 		webView.loadRequest(request)
 		super.viewDidLoad()

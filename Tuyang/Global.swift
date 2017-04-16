@@ -49,3 +49,11 @@ func getDistance(lat1: Double, lon1: Double, lat2: Double, lon2: Double) -> Doub
 	s *= _ER
 	return s
 }
+
+func showAlertView(title: String, message: String) {
+	let view = UIAlertView()
+	view.alertViewStyle = .default
+	view.title = title
+	view.message = message
+	view.show()
+}
