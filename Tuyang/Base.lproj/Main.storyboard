@@ -28,14 +28,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlF-6N-Yqp">
                                 <rect key="frame" x="68" y="443" width="187" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <state key="normal" image="CheckInButton"/>
                                 <connections>
                                     <action selector="checkinButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeF-6u-6lI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj7-uV-RSf" userLabel="relocateButton">
-                                <rect key="frame" x="12" y="534" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zj7-uV-RSf" userLabel="relocateButton">
+                                <rect key="frame" x="0.0" y="508" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Position"/>
                                 <connections>
                                     <action selector="relocateButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aU1-6z-NHd"/>
                                 </connections>
@@ -125,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="2737.5" y="34.859154929577464"/>
         </scene>
-        <!--View Controller-->
+        <!--留下足迹-->
         <scene sceneID="lwS-9S-saZ">
             <objects>
-                <viewController storyboardIdentifier="CheckinViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ovz-BI-o6G" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CheckinViewController" title="留下足迹" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ovz-BI-o6G" customClass="CheckinViewController" customModule="Tuyang" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cRS-81-mZT"/>
                         <viewControllerLayoutGuide type="bottom" id="T81-so-h0A"/>
@@ -136,12 +140,39 @@
                     <view key="view" contentMode="scaleToFill" id="h9b-W1-aeF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="txO-FN-Pv7" userLabel="Photo">
+                                <rect key="frame" x="40" y="100" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sIh-1E-f7g" userLabel="Comment">
+                                <rect key="frame" x="40" y="303" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2R-Oa-GiQ">
+                                <rect key="frame" x="137" y="382" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="submitButtonTouched:" destination="Ovz-BI-o6G" eventType="touchUpInside" id="feL-b2-byZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="留下足迹"/>
                     </view>
+                    <connections>
+                        <outlet property="commentTextField" destination="sIh-1E-f7g" id="cvO-zj-mB0"/>
+                        <outlet property="photoImageView" destination="txO-FN-Pv7" id="Flt-2u-pgI"/>
+                        <outlet property="submitButton" destination="V2R-Oa-GiQ" id="5G0-BS-ghN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RT-Mp-3Gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3735" y="35"/>
+            <point key="canvasLocation" x="3735" y="34.859154929577464"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="jJR-Oj-Fpj">
@@ -278,6 +309,7 @@
         <image name="Avatar" width="131" height="131"/>
         <image name="CheckInButton" width="150" height="55"/>
         <image name="Logo" width="60" height="60"/>
+        <image name="Position" width="100" height="100"/>
         <image name="ShadowEffect" width="50" height="568"/>
     </resources>
 </document>

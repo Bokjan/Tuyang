@@ -12,6 +12,8 @@ class Global {
 	static var password: String?
 	static var usertoken: String?
 	static var avatarUrl: String?
+	static var place: (Int, String)? // id, title
+	static var coordinateString: String?
 }
 
 //const double PI = 3.1415926535898;

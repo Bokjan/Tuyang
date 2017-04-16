@@ -19,6 +19,7 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 	let locationManager : CLLocationManager = CLLocationManager()
 	var currentLocation : CLLocation! // Ref: P518
 	var annotations: [Int] = []
+	var titleToId: [String: Int] = [ : ]
 	func processLogin() {
 		if UserDefault.getValue(key: "usertoken") == nil {
 			UserDefault.setValue(key: "username", value: "wallace")
@@ -73,9 +74,13 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 		locationManager.stopUpdatingLocation()
 		for item in mapView.annotations {
 			let s = getDistance(lat1: currentLocation.coordinate.latitude, lon1: currentLocation.coordinate.longitude, lat2: item.coordinate.latitude, lon2: item.coordinate.longitude)
-			debugPrint("distance: \(s), title: \(item.title!)")
+			debugPrint("distance: \(s), title: \(String(describing: item.title!))")
 			if s <= 1.0 { // km
+				UserDefault.setValue(key: "currentID", value: titleToId[item.title!!] ?? "SYSU")
+				UserDefault.setValue(key: "currentTitle", value: item.title!!)
 				checkinButton.isEnabled = true
+				//debugPrint("placeid = \(titleToId[item.title!!]!)")
+				UserDefault.setValue(key: "coordString", value: "[\(currentLocation.coordinate.latitude),\(currentLocation.coordinate.longitude)]")
 				return
 			}
 		}
@@ -120,6 +125,7 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 			anno.coordinate = coord
 			anno.title = sub["name"].string!
 			anno.subtitle = sub["description"].string!
+			titleToId[anno.title!] = sub["id"].int!
 			mapView.addAnnotation(anno)
 		}
 	}
@@ -127,7 +133,7 @@ class ViewController: BaseViewController, CLLocationManagerDelegate, MKMapViewDe
 		locationManager.startUpdatingLocation()
 	}
 	@IBAction func checkinButtonTouched(_ sender: Any) {
-		
+		self.openViewControllerBasedOnIdentifier("CheckinViewController")
 	}
 }
 

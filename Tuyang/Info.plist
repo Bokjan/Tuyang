@@ -49,6 +49,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>调用图库以传送照片</string>
+	<key>NSCameraUsageDescription</key>
+	<string>调用相机以拍摄照片</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

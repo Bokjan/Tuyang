@@ -34,6 +34,7 @@
 		762F80FB1EA203200031C68C /* MyTrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTrackViewController.swift; sourceTree = "<group>"; };
 		762F80FD1EA20AB30031C68C /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		762F80FF1EA2497E0031C68C /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinViewController.swift; sourceTree = "<group>"; };
+		762F81011EA24B250031C68C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		76978BFA1EA12F8E002205EF /* Tuyang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tuyang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76978BFD1EA12F8E002205EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76978BFF1EA12F8E002205EF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		76978C161EA134B2002205EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				762F81011EA24B250031C68C /* Photos.framework */,
 				76978C171EA134B2002205EF /* MapKit.framework */,
 				EE6BAFAF10D8099D20624B7C /* Pods_Tuyang.framework */,
 			);
